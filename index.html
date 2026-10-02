@@ -50,10 +50,10 @@
        Restrict it under Allowed Origins on the channel's Configuration tab before going live. -->
   <script src="https://agents.kore.ai/api/sdk/embed/script" defer></script>
   <agent-widget
-    project-id="01a0e7cc-bd78-7eed-b634-6695521782fa"
-    api-key="pk_665bed3a90d7e79277e49b77519160d9899f54b936902a93"
+    project-id="${{ secrets.PROJECT_ID }}"
+    api-key="${{ secrets.SDK_API_KEY }}"
     endpoint="https://agents.kore.ai"
-    channel-id="01a0ebf6-88bc-7c00-9b02-722ad840b4bb"
+    channel-id="${{ secrets.CHANNEL_ID }}"
     client-session-identifier="true"
     chat-enabled="true"
     voice-enabled="false"
